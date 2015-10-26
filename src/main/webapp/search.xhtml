@@ -8,18 +8,12 @@
       xml:lang="en" lang="en">
 <body>
 
-<ui:composition>
-    <ui:define name="content">
-
         <h:form>
-            <h:inputText value="#{search.searchString}" >
-                <f:passThroughAttribute name="placeholder" value="#{msg['search.placeholder']}" />
+            <h:inputText value="suchen" >
+                <f:passThroughAttribute name="placeholder" value="platzhalter" />
             </h:inputText>
-            <h:commandButton action="#{search.doSearch}" value="#{msg['search.search.button']}"/>
+            <h:commandButton action="#{search.doSearch}" value="text"/>
         </h:form>
-
-    </ui:define>
-</ui:composition>
 
 </body>
 </html>
